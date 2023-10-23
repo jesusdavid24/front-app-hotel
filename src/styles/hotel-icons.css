@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: "hotel";
-    src: url("../fonts/hotel.eot");
-    src: url("../fonts/hotel.eot?#iefix") format("embedded-opentype"), url("../fonts/hotel.woff") format("woff"), url("../fonts/hotel.ttf") format("truetype"), url("../fonts/hotel.svg#hotel") format("svg");
+    src: url("../styles/fonts/hotel.eot");
+    src: url("../styles/fonts/hotel.eot?#iefix") format("embedded-opentype"), url("../styles/fonts/hotel.woff") format("woff"), url("../stylesfonts/hotel.ttf") format("truetype"), url("../styles/fonts/hotel.svg#hotel") format("svg");
     font-weight: normal;
     font-style: normal;
 }
