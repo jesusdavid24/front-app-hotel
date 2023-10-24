@@ -436,7 +436,7 @@
 
     // set current date
     $('.datepicker').datepicker('setDate', 'today');
-    // get current value from departure 
+    // get current value from departure
     $(dateArrivalVal).html($(dateArrival).val());
     // get current value from return
     $(dateDepartureVal).html($(dateDeparture).val());
@@ -445,7 +445,7 @@
     // update number of guest list
 
 
-    // Guests 
+    // Guests
     // -------------------------------------------------------
 
     var $guests = $('.guests'),
@@ -472,7 +472,7 @@
         $guests.removeClass("show");
     });
 
-    // Quantities (add remove guests numbers) 
+    // Quantities (add remove guests numbers)
     // -------------------------------------------------------
 
     $('.qty-plus').add('.qty-minus').on("click", function (e) {

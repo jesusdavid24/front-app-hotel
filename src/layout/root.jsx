@@ -6,7 +6,7 @@ export const Root = () => {
   const navigation = useNavigation();
 
   return (
-    <div>
+    <div className="wrapper">
       <main>
         {navigation.state === 'loading' ? <Loader /> : <Outlet />}
       </main>
