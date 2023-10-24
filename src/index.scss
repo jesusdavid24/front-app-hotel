@@ -49,20 +49,4 @@ body *:focus {
   outline: none !important;
 }
 
-@media (min-width: 1366px) {
-  .container {
-    width: 1300px;
-  }
-}
 
-@media (min-width: 1680px) {
-  .container {
-    width: 1400px;
-  }
-}
-
-@media print {
-  .container {
-    width: 99%;
-  }
-}
