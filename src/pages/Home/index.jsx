@@ -1,10 +1,10 @@
-import { Navigation } from '../../components/Navigation';
+import { Navbar } from '../../components/Navbar';
 import { Header } from '../../components/Header';
 
 export const Home = () => {
   return (
     <div>
-      <Navigation />
+      <Navbar />
       <Header />
     </div>
   )

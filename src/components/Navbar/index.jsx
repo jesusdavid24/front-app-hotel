@@ -1,7 +1,7 @@
 import { Loader } from '../Loader';
 import './index.scss';
 
-export const Navigation = () => {
+export const Navbar = () => {
   return (
     <div>
       <Loader />
