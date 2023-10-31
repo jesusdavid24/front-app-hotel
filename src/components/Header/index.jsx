@@ -25,9 +25,6 @@ export const Header = () => {
                 <div className="desc animated" data-animation="fadeInUp">
                   and unforgettable weddings.
                 </div>
-                <div className="animated" data-animation="fadeInUp">
-                  <a href="https://themeforest.net/item/colina-hotel-website-template/20977257" className="btn btn-clean">Buy this template</a>
-                </div>
               </div>
             </div>
           </div>

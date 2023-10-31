@@ -39,7 +39,7 @@ export const Navbar = () => {
           <nav className="navigation-main clearfix">
             <div className="logo animated fadeIn mt-5">
               <a href="/">
-                <img className="logo-desktop" src="/images/logo-2.png" alt="Alternate Text" />
+                <img className="logo-desktop" src="/images/logo-1.png" alt="Alternate Text" />
                 <img className="logo-mobile" src="/images/logo-mobile.png" alt="Alternate Text" />
               </a>
             </div>
