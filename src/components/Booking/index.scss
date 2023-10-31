@@ -1,0 +1,390 @@
+.booking {
+  padding-top: 0;
+}
+
+.booking.booking-inner {
+  padding-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .booking.booking-inner {
+    margin-top: -175px;
+    z-index: 9;
+    position: relative;
+    color: white;
+  }
+  .booking.booking-inner .booking-wrapper {
+    position: relative;
+  }
+  .booking.booking-inner .booking-wrapper:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .booking.booking-inner .booking-wrapper {
+    background-color: #00486c;
+    color: white;
+  }
+}
+
+.booking.booking-light-theme .booking-wrapper {
+  border-bottom: 1px solid #dddddd;
+}
+
+.booking.booking-default-theme {
+  padding-bottom: 0;
+  color: white;
+  background-color: #00486c;
+}
+
+.booking.booking-default-theme .section-header .title {
+  color: white;
+  text-align: center;
+}
+
+.booking .section-header {
+  padding-top: 15px;
+  padding-bottom: 0;
+  background-color: transparent;
+}
+
+.booking .section-header span {
+  font-size: 100%;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .booking .section-header {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .booking .section-header {
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .booking .section-header {
+    padding-top: 40px;
+  }
+}
+
+.booking .booking-wrapper {
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+.booking .booking-wrapper .datepicker,
+.booking .booking-wrapper .qty-result {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  text-indent: -99999px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.booking .booking-wrapper .date {
+  position: relative;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.booking .booking-wrapper .date:after {
+  font-family: 'LinearIcons';
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  text-transform: none;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  content: "\e87a";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  font-size: 30px;
+  margin-top: -12px;
+}
+
+.booking .booking-wrapper .date .day {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.booking .booking-wrapper .date .year {
+  display: none;
+}
+
+.booking .booking-wrapper .guests input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.booking .booking-wrapper .guests .qty-result-text {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+@media (min-width: 992px) {
+  .booking .booking-wrapper .guests .qty-result-text {
+    font-size: 80px;
+    line-height: 50px;
+  }
+}
+
+.booking .booking-wrapper .guests input::-webkit-outer-spin-button,
+.booking .booking-wrapper .guests input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.booking .booking-wrapper .guests .guest-list {
+  display: none;
+  background-color: white;
+  position: fixed;
+  z-index: 99999;
+  margin: 0;
+  padding: 0;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
+}
+
+.booking .booking-wrapper .guests .guest-list li {
+  color: #3a3d45;
+  padding: 0;
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.booking .booking-wrapper .guests .guest-list li.header, .booking .booking-wrapper .guests .guest-list li.footer {
+  background-color: #00486c;
+  color: white;
+  padding: 20px 15px;
+}
+
+.booking .booking-wrapper .guests .guest-list li.header .qty-apply, .booking .booking-wrapper .guests .guest-list li.footer .qty-apply {
+  font-size: 70%;
+  padding: 4px;
+  border: 1px solid #006a9f;
+  cursor: pointer;
+  float: right;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.booking .booking-wrapper .guests .guest-list li div {
+  font-size: large;
+  float: left;
+}
+
+.booking .booking-wrapper .guests .guest-list li div:nth-child(1) {
+  width: 20%;
+  padding-left: 10px;
+}
+
+.booking .booking-wrapper .guests .guest-list li div:nth-child(2) {
+  width: 40%;
+}
+
+.booking .booking-wrapper .guests .guest-list li div:nth-child(2) span {
+  font-size: 18px;
+  padding: 3px 10px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.booking .booking-wrapper .guests .guest-list li div:nth-child(2) span small {
+  display: block;
+  font-weight: 200;
+}
+
+.booking .booking-wrapper .guests .guest-list li div:nth-child(3) {
+  width: 40%;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.booking .booking-wrapper .guests .guest-list li div > span {
+  font-size: 70%;
+}
+
+.booking .booking-wrapper .guests .guest-list li .qty-amount {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 100%;
+  font-weight: 500;
+}
+
+.booking .booking-wrapper .guests .guest-list li .qty-btn {
+  border: 2px solid #dddddd;
+  border-radius: 100%;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  margin-left: 7px;
+  outline: none;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.booking .booking-wrapper .guests .guest-list li .qty-btn:hover {
+  background-color: #00486c;
+  color: white;
+  border-color: #00486c;
+}
+
+@media (min-width: 768px) {
+  .booking .booking-wrapper .guests .guest-list {
+    position: absolute;
+    width: auto;
+    min-width: 350px;
+    left: 0;
+    top: 93px;
+  }
+}
+
+@media (min-width: 992px) {
+  .booking .booking-wrapper .guests .guest-list {
+    top: 108px;
+  }
+}
+
+.booking .booking-wrapper .date,
+.booking .booking-wrapper .guests {
+  position: relative;
+  padding-top: 20px;
+}
+
+.booking .booking-wrapper .date .date-value,
+.booking .booking-wrapper .guests .date-value {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: "Playfair Display", serif;
+}
+
+.booking .booking-wrapper .date:before,
+.booking .booking-wrapper .guests:before {
+  position: absolute;
+  content: attr(data-text);
+  left: 0;
+  top: 0;
+}
+
+.booking .booking-wrapper .date:hover .date-value,
+.booking .booking-wrapper .guests:hover .date-value {
+  -moz-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  -o-transform: translateX(15px);
+  -webkit-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+.booking .booking-wrapper .btn {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  font-size: 150%;
+  text-transform: none;
+}
+
+.booking .booking-wrapper .btn small {
+  display: block;
+  font-size: 50%;
+}
+
+@media (min-width: 992px) {
+  .booking .booking-wrapper .text-size, .booking .booking-wrapper .date .day, .booking .booking-wrapper .guests .qty-result {
+    font-size: 80px;
+    line-height: 50px;
+  }
+  .booking .booking-wrapper {
+    padding: 40px;
+  }
+  .booking .booking-wrapper .date .month {
+    display: inline-block;
+  }
+  .booking .booking-wrapper .guests .qty-result {
+    height: 80px;
+  }
+  .booking .booking-wrapper .btn {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking .booking-wrapper .date {
+    padding-right: 0;
+  }
+  .booking .booking-wrapper .date:after {
+    display: none;
+  }
+  .booking .booking-wrapper .btn {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .booking .container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.ui-datepicker {
+  z-index: 10009 !important;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-active {
+  background-color: #00486c;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  background-color: #00486c;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .ui-datepicker {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    top: 0 !important;
+    margin-top: 0 !important;
+    position: fixed !important;
+  }
+}

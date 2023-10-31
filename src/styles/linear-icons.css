@@ -1,17 +1,17 @@
 @font-face {
 	font-family: 'LinearIcons';
-	src:url('../fonts/linearIcons.eot?w118d');
-	src:url('../fonts/linearIcons.eot?#iefixw118d') format('embedded-opentype'),
-		url('../fonts/linearIcons.woff2?w118d') format('woff2'),
-		url('../fonts/linearIcons.woff?w118d') format('woff'),
-		url('../fonts/linearIcons.ttf?w118d') format('truetype'),
-		url('../fonts/linearIcons.svg?w118d#Linearicons-Free') format('svg');
+	src:url('../styles/linearIcons.eot?w118d');
+	src:url('../styles/fonts/linearIcons.eot?#iefixw118d') format('embedded-opentype'),
+		url('../styles/fonts/linearIcons.woff2?w118d') format('woff2'),
+		url('../styles/fonts/linearIcons.woff?w118d') format('woff'),
+		url('../styles/fonts/linearIcons.ttf?w118d') format('truetype'),
+		url('../styles/fonts/linearIcons.svg?w118d#Linearicons-Free') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
- 
+
 .icon {
-    font-family: 'LinearIcons'; 
+    font-family: 'LinearIcons';
     font-style: normal;
     font-variant-ligatures: normal;
     font-variant-caps: normal;
