@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Loader } from '../Loader';
 import './index.scss';
 
@@ -39,7 +40,7 @@ export const Navbar = () => {
           <nav className="navigation-main clearfix">
             <div className="logo animated fadeIn mt-5">
               <a href="/">
-                <img className="logo-desktop" src="/images/logo-1.png" alt="Alternate Text" />
+                <img className="logo-desktop" src="/images/logo-2.png" alt="Alternate Text" />
                 <img className="logo-mobile" src="/images/logo-mobile.png" alt="Alternate Text" />
               </a>
             </div>
@@ -49,7 +50,7 @@ export const Navbar = () => {
             <div className="navigation-block clearfix">
               <ul className="navigation-left">
                 <li>
-                  <a href="index.html">Home <span className="open-dropdown"><i className="fa fa-angle-down"></i></span></a>
+                  <Link to="/" >Home <span className="open-dropdown"><i className="fa fa-angle-down"></i></span></Link>
                   <ul>
                     <li><a href="index.html">Home - Booking intro</a></li>
                     <li><a href="index-2.html">Home - Booking box</a></li>
@@ -60,7 +61,7 @@ export const Navbar = () => {
                 <li>
                   <a href="#">Pages <span className="open-dropdown"><i className="fa fa-angle-down"></i></span></a>
                   <ul>
-                    <li><a href="about.html">About us</a></li>
+                    <li><Link to="/about">About us</Link></li>
                     <li><a href="rooms-category.html">Rooms category</a></li>
                     <li><a href="room-overview.html">Room overview</a></li>
                     <li><a href="404.html">404 Not found</a></li>
@@ -80,7 +81,7 @@ export const Navbar = () => {
 
               <ul className="navigation-right">
                 <li>
-                  <a href="facility.html">Facilities</a>
+                  <Link to="/rooms-category">Rooms category</Link>
                 </li>
 
                 <li>
