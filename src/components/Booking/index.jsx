@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './index.scss';
 
 export const Booking = () => {
@@ -87,10 +88,10 @@ export const Booking = () => {
               </div>
 
               <div className="col-xs-12 col-sm-4">
-                <a href="reservation-1.html" className="btn btn-clean">
+                <Link to="/checkout" className="btn btn-clean">
                   Book now
                   <small>Best Prices Guaranteed</small>
-                </a>
+                </Link>
               </div>
 
             </div>

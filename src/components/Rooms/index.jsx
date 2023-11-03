@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../../styles/index.scss';
 
 export const Rooms = () => {
@@ -6,7 +7,7 @@ export const Rooms = () => {
       <section className="rooms rooms-widget">
         <div className="section-header">
           <div className="container">
-            <h2 className="title">Rooms accommodation <a href="rooms-category.html" className="btn btn-sm btn-clean-dark">View all</a></h2>
+            <h2 className="title">Rooms accommodation <Link to="/rooms-category" className="btn btn-sm btn-clean-dark">View all</Link></h2>
             <p>Designed as a privileged almost private place where you&apos;ll feel right at home</p>
           </div>
         </div>

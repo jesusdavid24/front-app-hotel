@@ -1,0 +1,78 @@
+.contact {
+  background-color: transparent;
+  padding: 0 0 100px 0;
+}
+
+.contact .map {
+  height: 400px;
+}
+
+.contact .contact-block {
+  margin-top: -80px;
+}
+
+.contact .contact-block .banner {
+  padding: 50px 40px;
+  background-image: url(img/contact.png);
+  background-position: center;
+  background-size: 80% auto;
+  background-repeat: no-repeat;
+}
+
+.contact .contact-block .contact-info {
+  background-color: #eeeeee;
+  padding-bottom: 15px;
+}
+
+.contact .contact-block .contact-info figure {
+  padding: 15px;
+}
+
+.contact .contact-block .contact-info figure figcaption > strong {
+  display: block;
+  padding: 7.5px 0;
+}
+
+.contact .contact-block .contact-info figure figcaption > span {
+  font-size: 90%;
+}
+
+.contact .contact-block .contact-info figure .icon {
+  font-size: 50px;
+  color: #00486c;
+}
+
+.contact .contact-block .contact-form {
+  display: none;
+  margin-top: 50px;
+}
+
+.contact .contact-block .contact-form .form-control {
+  border-color: transparent;
+}
+
+.contact .map-info-window {
+  padding: 15px;
+}
+
+.contact .map-info-window .fa {
+  width: 20px;
+  text-align: center;
+  margin-right: 3px;
+  display: inline-block;
+}
+
+.banner {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: white;
+  background-color: #00486c;
+}
+
+.banner .btn {
+  margin-top: 40px;
+}

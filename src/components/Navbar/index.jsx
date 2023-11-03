@@ -39,10 +39,10 @@ export const Navbar = () => {
 
           <nav className="navigation-main clearfix">
             <div className="logo animated fadeIn mt-5">
-              <a href="/">
+              <Link to="/">
                 <img className="logo-desktop" src="/images/logo-2.png" alt="Alternate Text" />
                 <img className="logo-mobile" src="/images/logo-mobile.png" alt="Alternate Text" />
-              </a>
+              </Link>
             </div>
 
             <div className="toggle-menu"><i className="icon icon-menu"></i></div>
@@ -62,7 +62,7 @@ export const Navbar = () => {
                   <a href="#">Pages <span className="open-dropdown"><i className="fa fa-angle-down"></i></span></a>
                   <ul>
                     <li><Link to="/about">About us</Link></li>
-                    <li><a href="rooms-category.html">Rooms category</a></li>
+                    <li><Link to="/rooms-category">Rooms category</Link></li>
                     <li><a href="room-overview.html">Room overview</a></li>
                     <li><a href="404.html">404 Not found</a></li>
                     <li><a href="shortcodes.html">Shortcodes</a></li>
@@ -81,7 +81,7 @@ export const Navbar = () => {
 
               <ul className="navigation-right">
                 <li>
-                  <Link to="/rooms-category">Rooms category</Link>
+                  <Link to="/about">About us</Link>
                 </li>
 
                 <li>
@@ -93,7 +93,7 @@ export const Navbar = () => {
                 </li>
 
                 <li>
-                  <a href="contact.html">Contact</a>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
