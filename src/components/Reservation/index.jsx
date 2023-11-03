@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import './index.scss';
 
 export const Reservation = () => {
   return (
@@ -77,7 +76,7 @@ export const Reservation = () => {
                   <a href="#" className="btn btn-clean-dark">Change</a>
                 </div>
                 <div>
-                  <Link to={} className="btn btn-main">Reservation <span className="icon icon-chevron-right"></span></Link>
+                  <Link to="/confirm-reservation" className="btn btn-main">Reservation <span className="icon icon-chevron-right"></span></Link>
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ import { About } from '../components/About';
 import { RoomsCategory } from '../components/RoomsCategory';
 import { Contact } from '../components/Contact';
 import { Checkout } from '../pages/Checkout';
-
+import { ConfirmReservation } from '../components/ConfirmReservation';
 
 export const router = createBrowserRouter([
   {
@@ -33,6 +33,10 @@ export const router = createBrowserRouter([
       {
         path: '/checkout',
         element: <Checkout />,
+      },
+      {
+        path: '/confirm-reservation',
+        element: <ConfirmReservation />,
       },
     ],
   },
