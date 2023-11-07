@@ -88,7 +88,7 @@ export const Booking = () => {
               </div>
 
               <div className="col-xs-12 col-sm-4">
-                <Link to="/checkout" className="btn btn-clean">
+                <Link to="/reservation" className="btn btn-clean">
                   Book now
                   <small>Best Prices Guaranteed</small>
                 </Link>

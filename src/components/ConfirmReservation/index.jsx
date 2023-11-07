@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { CheckoutSteps } from '../CheckoutSteps';
 import './index.scss';
 
@@ -231,7 +232,7 @@ export const ConfirmReservation = () => {
                     <a href="reservation-1.html" className="btn btn-clean-dark">Back</a>
                   </div>
                   <div>
-                    <a href="reservation-3.html" className="btn btn-main">Checkout <span className="icon icon-chevron-right"></span></a>
+                    <Link to="/checkout" className="btn btn-main">Checkout <span className="icon icon-chevron-right"></span></Link>
                   </div>
                 </div>
               </div>

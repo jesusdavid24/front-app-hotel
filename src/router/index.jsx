@@ -5,8 +5,9 @@ import { NotFound } from '../components/NotFound';
 import { About } from '../components/About';
 import { RoomsCategory } from '../components/RoomsCategory';
 import { Contact } from '../components/Contact';
-import { Checkout } from '../pages/Checkout';
 import { ConfirmReservation } from '../components/ConfirmReservation';
+import { Checkout } from '../components/Checkout';
+import { Reservation } from '../pages/Reservation';
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/reservation',
+        element: <Reservation />,
       },
       {
         path: '/checkout',
