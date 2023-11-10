@@ -3,6 +3,7 @@ import { Loader } from '../Loader';
 import './index.scss';
 
 export const Navbar = () => {
+
   return (
     <div>
       <Loader />
@@ -40,7 +41,7 @@ export const Navbar = () => {
           <nav className="navigation-main clearfix">
             <div className="logo animated fadeIn mt-5">
               <Link to="/">
-                <img className="logo-desktop" src="/images/logo-2.png" alt="Alternate Text" />
+                <img className="logo-desktop" src="/images/logo-3.png" alt="Alternate Text" />
                 <img className="logo-mobile" src="/images/logo-mobile.png" alt="Alternate Text" />
               </Link>
             </div>

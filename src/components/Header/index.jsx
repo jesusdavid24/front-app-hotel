@@ -6,7 +6,7 @@ export const Header = () => {
       <section className="frontpage-slider">
         <div className="owl-slider owl-slider-header owl-slider-fullscreen">
 
-          <div className="item" style={{ backgroundImage: 'url(/images/slide-3.jpg)' }}>
+          <div className="item" style={{ backgroundImage: 'url(/images/slide-5)' }}>
             <div className="box text-center">
               <div className="container">
                 <div className="rating animated" data-animation="fadeInDown">
